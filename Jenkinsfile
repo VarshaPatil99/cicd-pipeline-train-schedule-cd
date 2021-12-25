@@ -11,6 +11,7 @@ pipeline {
         
          stage('DeployToStaging') {
             when {
+                echo branch
                 branch 'master'
             }
             steps {
